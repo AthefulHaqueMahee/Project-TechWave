@@ -403,6 +403,49 @@
   font-size: 14px;
 }  
 
+/* ===== FOOTER ===== */
+.footer {
+  padding: 40px 20px;
+  background: url("../assets/footer-bg.png") center/cover no-repeat;
+  
+  text-align: center;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.footer hr {
+  border: none;
+  height: 1px;
+  background: #1e293b;
+  margin: 20px 0;
+}
+
+.footer-icons span {
+  padding: 10px ;
+  background: #533C72;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+}  
+.footer-icons img{
+  width:15px;
+}
+
+
+
+
+
+
+
+
 /* Mobile */
 @media (max-width: 576px) {
   .host-wrapper {
