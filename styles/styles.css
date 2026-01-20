@@ -169,10 +169,10 @@
 }
 
 
-/* ===== ABOUT ===== */
+
 .about {
   padding: 80px 20px;
-  background: #0f172a;
+   background: #230E3D;
   text-align: center;
 }
 
@@ -203,6 +203,7 @@
   padding: 5px;
   border-radius: 16px;
   height: 180px;
+  width: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,7 +221,69 @@
   color: #94a3b8;
 }
 
+
+.why {
+  padding: 80px 20px;
+  background: #020617;
+  text-align: center;
+}
+
+.why h3 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+
+.premium1{
+  grid-area: premium1;
+}
+.premium2{
+  grid-area: premium2;
+}
+.premium3{
+  grid-area: premium3;
+}
+.premium4{
+  grid-area: premium4;
+}
+.premium5{
+  grid-area: premium5;
+}
+.features {
+  display: grid;
+  gap: 5px;
+  grid-template-areas:
+  "premium1 premium2 premium2"
+  "premium1 premium3 premium3"
+  "premium4 premium4 premium5" ;
+}
+
+.feature-card {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  width: 90%;
+  background: rgba(53, 17, 101, 0.4);
+  padding: 15px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-card h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #94a3b8;
+}
+
 /* Mobile */
+
 
 
 
@@ -295,5 +358,12 @@
 @media (max-width: 576px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .features {
+    /* grid-template-columns: 1fr; */
+    display: flex;
+    flex-direction: column;
   }
 }
