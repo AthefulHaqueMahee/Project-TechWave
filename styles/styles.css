@@ -282,8 +282,73 @@
   color: #94a3b8;
 }
 
-/* Mobile */
 
+
+
+
+
+/* ===== FEATURED EPISODES ===== */
+.episodes {
+  padding: 80px 20px;
+  background: #1A0B2E;
+  text-align: center;
+}
+
+.episodes h3 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 45px;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.episode-card {
+  background: #020617;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-6px);
+}
+
+.video-box {
+  height: 160px;
+  background: #1e293b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.episode-card h4 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.episode-card p {
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.duration {
+  color: #5aff5a;
+  font-weight: 600;
+  font-size: 15px;
+}
+.duration img{
+  width: 12px;
+}
+
+/* Mobile */
 
 
 
@@ -367,3 +432,10 @@
     flex-direction: column;
   }
 }
+@media (max-width: 576px) {
+  .episode-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
